@@ -1,0 +1,24 @@
+#N canvas 177 138 450 300 10;
+#X obj 140 257 dac~;
+#X obj 168 220 *~ 0.1;
+#X obj 165 170 *~;
+#X obj 242 122 r volume;
+#X obj 227 147 loadbang;
+#X obj 73 53 r freq;
+#X obj 158 49 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3600 1;
+#X obj 155 69 * 10;
+#X obj 87 112 phasor~;
+#X obj 114 90 sig~;
+#X msg 225 167 0;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 2 1;
+#X connect 4 0 10 0;
+#X connect 5 0 9 0;
+#X connect 6 0 7 0;
+#X connect 7 0 9 0;
+#X connect 8 0 2 0;
+#X connect 9 0 8 0;
+#X connect 10 0 2 1;
