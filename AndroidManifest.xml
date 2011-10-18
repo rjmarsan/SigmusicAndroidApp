@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="processing.android.test.sigmusic" android:versionCode="1" android:versionName="0.1">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="processing.android.test.sigmusic" android:versionCode="2" android:versionName="0.2">
   <uses-sdk android:minSdkVersion="7"/>
-  <application android:label="RythemApp Alpha" android:icon="@drawable/icon" android:debuggable="true">
+  <application android:label="RythemApp Alpha" android:icon="@drawable/icon">
     <activity android:name=".sigmusic">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>

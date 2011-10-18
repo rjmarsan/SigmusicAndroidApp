@@ -32,6 +32,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>AndMT_src</name>
+			<type>2</type>
+			<locationURI>_android_AndMT_3c7799e/src</locationURI>
+		</link>
+		<link>
 			<name>BluetoothMidi_src</name>
 			<type>2</type>
 			<locationURI>_android_BluetoothMidi_1f8182cf/src</locationURI>

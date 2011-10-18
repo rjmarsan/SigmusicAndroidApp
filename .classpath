@@ -7,5 +7,6 @@
 	<classpathentry kind="src" path="PdCore_src"/>
 	<classpathentry kind="src" path="PdCore_jni_libpd_java"/>
 	<classpathentry kind="src" path="BluetoothMidi_src"/>
+	<classpathentry kind="src" path="AndMT_src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
