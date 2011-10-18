@@ -1,10 +1,10 @@
-#N canvas 177 224 971 479 10;
+#N canvas 268 326 1008 673 10;
 #X text 294 -33 All the 'send's required to operate RythemPatch;
 #X obj 143 15 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 38 186 send tempo;
 #X obj 43 15 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 1600 1;
 #X obj 34 154 * 5;
 #X text 62 127 milliseconds between sequence notes;
 #X obj 138 186 send separation;
@@ -13,7 +13,7 @@
 -1 -1 0 1;
 #X text 291 153 base pitch in midi;
 #X obj 263 186 send pitch;
-#X obj 136 154 * 1;
+#X obj 135 154 * 1;
 #X obj 259 154 * 1;
 #X obj 358 91 send sawtooth;
 #X msg 358 70 0;
@@ -37,39 +37,37 @@
 #X msg 732 57 bang;
 #X text 701 -23 globally start and stop the sequencer;
 #X obj 145 258 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 3500 1;
 #X obj 45 258 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 36 397 * 5;
+-1 -1 300 1;
 #X obj 270 258 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 138 397 * 1;
-#X obj 261 397 * 1;
-#X obj 40 429 send dist;
+#X obj 11 471 send dist;
 #X obj 265 429 send noise;
-#X text 64 370 amount the signal is distorted 0=none;
-#X text 167 392;
-#X obj 140 428 send distwrap;
-#X text 169 364 amount of 'wrap' signal to mix back in;
-#X text 293 396;
-#X text 294 378 amount of noise to mix in;
+#X text 5 489 amount the signal is distorted 0=none;
+#X obj 109 450 send distwrap;
+#X text 108 468 amount of 'wrap' signal to mix back in;
+#X text 261 443 amount of noise to mix in;
 #X text 135 234 distortion stuff;
 #X obj 551 256 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 3200 1;
 #X obj 451 256 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10300 1;
 #X obj 442 395 * 5;
 #X obj 676 256 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 446 427 send delaytime;
-#X obj 547 426 send delaymix;
+-1 -1 10200 1;
+#X obj 437 465 send delaytime;
+#X obj 544 442 send delaymix;
 #X obj 671 427 send delayfeedback;
-#X text 470 376 time of delay in millis;
-#X text 587 390 amount delay mixes in;
+#X text 431 478 time of delay in millis;
+#X text 541 458 amount delay mixes in;
 #X obj 544 395 / 127;
 #X obj 667 395 / 127;
-#X text 705 376 amount delay feeds back into delay;
+#X text 669 442 amount delay feeds back into delay;
 #X text 531 228 delay stuff;
+#X obj 138 397 / 127;
+#X obj 261 396 / 127;
+#X obj 36 397 / 10;
 #X connect 1 0 11 0;
 #X connect 3 0 4 0;
 #X connect 4 0 2 0;
@@ -86,15 +84,15 @@
 #X connect 27 0 26 0;
 #X connect 30 0 28 0;
 #X connect 31 0 29 0;
-#X connect 33 0 37 0;
-#X connect 34 0 35 0;
-#X connect 35 0 39 0;
-#X connect 36 0 38 0;
-#X connect 37 0 43 0;
-#X connect 38 0 40 0;
-#X connect 48 0 57 0;
-#X connect 49 0 50 0;
-#X connect 50 0 52 0;
-#X connect 51 0 58 0;
-#X connect 57 0 53 0;
-#X connect 58 0 54 0;
+#X connect 33 0 56 0;
+#X connect 34 0 58 0;
+#X connect 35 0 57 0;
+#X connect 43 0 52 0;
+#X connect 44 0 45 0;
+#X connect 45 0 47 0;
+#X connect 46 0 53 0;
+#X connect 52 0 48 0;
+#X connect 53 0 49 0;
+#X connect 56 0 39 0;
+#X connect 57 0 37 0;
+#X connect 58 0 36 0;
